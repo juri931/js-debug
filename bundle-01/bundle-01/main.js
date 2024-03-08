@@ -11,9 +11,14 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
+/*
+1. è un contatore
+2. non sono presenti errori di sintassi
+3. è presente l'errore logico in quanto i > 5 darà sempre una condizione falsa avendo dichiarato i = 0
+*/  
 
 
 // ESERCIZIO 2
