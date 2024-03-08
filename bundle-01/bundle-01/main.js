@@ -48,13 +48,13 @@ function displayEvenNumbers() {
     let evenNumbers = [];
     for (let i = 0; i < numbers.length; i++) {  
         //errore chiusura con ; dentro la condizione || -1 non necessario
-        if (numbers[i] % 2 === 0) {   
-            // Errore singolo = || mancanza di indice[i] || chiusura ; subito dopo la condizione
+        if ((numbers[i] % 2) === 0) {   
+            // Errore singolo = || mancanza di indice[i] || chiusura ; subito dopo la condizione || mancanza di parentesi tra (numbers[i] % 2)
             evenNumbers.push(numbers[i]);
             // errore di push dell'indice
         }
-        // return evenNumbers; 
-        // non permette di restituire i valori corretti
+        // non permette di restituire i valori corretti se il return  si trova fuori dalla condizione esatta
     }
-    displayEvenNumbers() // dovrebbe restituire [2,4,6,8]    
+    return evenNumbers; 
 }
+displayEvenNumbers(numbers); // dovrebbe restituire [2,4,6,8]
