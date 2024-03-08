@@ -43,14 +43,18 @@ function loopToFive() {
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
-// function displayEvenNumbers() {
-//     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-//     let evenNumbers = [];
-//     for (let i = 0; i < numbers.length - 1; i++;) {
-//         if (numbers % 2 = 0); {
-//             evenNumbers.push(i);
-//         }
-//         return evenNumbers;
-//     }
-// }
-// displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+function displayEvenNumbers() {
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    let evenNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {  
+        //errore chiusura con ; dentro la condizione || -1 non necessario
+        if (numbers[i] % 2 === 0) {   
+            // Errore singolo = || mancanza di indice[i] || chiusura ; subito dopo la condizione
+            evenNumbers.push(numbers[i]);
+            // errore di push dell'indice
+        }
+        // return evenNumbers; 
+        // non permette di restituire i valori corretti
+    }
+    displayEvenNumbers() // dovrebbe restituire [2,4,6,8]    
+}
