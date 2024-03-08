@@ -32,7 +32,7 @@ printColorsNumber();
 
 // ESERCIZIO 3
 function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
+    const userNumber = Number(prompt('Inserisci un numero')); // mancanza di number per accettare in prompt solo numeri
     const total = userNumber + 12;
 
     console.log(`Il risultato finale è ${total}`);
