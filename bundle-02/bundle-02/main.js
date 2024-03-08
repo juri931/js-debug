@@ -9,14 +9,13 @@
 ​
 *******************************************************************************/
 
-
 // ESERCIZIO 1
 function checkAge() {
     const myAge = 32;
-    const message = '';
+    let message = ''; // message non può essere una const
 
     if (myAge < 18) {
-        message = `Sei troppo giovane! Hai ${myAge} anni!`;
+        message = 'Sei troppo giovane! Hai '+ myAge + ' anni!'; // template literal al posto degli apici, con conseguenziale adattamento
     } else {
         message = 'Hai più di 18 anni!';
     }
@@ -88,32 +87,4 @@ function checkAccessImproved() {
         }
     }
     checkAccessImproved();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} // mancata chiusura
