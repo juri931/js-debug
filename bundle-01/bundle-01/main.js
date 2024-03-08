@@ -34,11 +34,12 @@ function addIfEven(num) {
 
 
 // ESERCIZIO 3
-// function loopToFive() {
-//     for (let i = 0, i < 5, i++) {
-//         console.log(i);
-//     }
-// }
+/* è un contatore uguale al primo esercizio, in questo caso c'è un errore di di sintassi (virgole al posto dei punto e virgola)*/ 
+function loopToFive() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+}
 
 
 // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
