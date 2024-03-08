@@ -51,7 +51,7 @@ function checkAccess() {
         grantAccess = 'true';
     }
 
-    if (grantAccess === true) {
+    if (grantAccess = true) { // basta un solo = per un valore boolean
         console.log('Accesso consentito!');
     } else {
         console.log('Accesso negato!');
