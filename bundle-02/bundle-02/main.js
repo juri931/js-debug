@@ -9,7 +9,7 @@
 ​
 *******************************************************************************/
 
-// ESERCIZIO 1
+// ESERCIZIO 1 
 function checkAge() {
     const myAge = 32;
     let message = ''; // message non può essere una const
@@ -25,7 +25,7 @@ checkAge();
 // ESERCIZIO 2
 function printColorsNumber() {
     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`); // errore di sintassi nella parola length
 }
 printColorsNumber();
 
