@@ -45,13 +45,13 @@ function checkAccess() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+    let grantAccess = false; // valore boolean tra gli apici
 
     if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
+        grantAccess = true; // valore boolean tra gli apici
     }
 
-    if (grantAccess = true) { // basta un solo = per un valore boolean
+    if (grantAccess === true) {
         console.log('Accesso consentito!');
     } else {
         console.log('Accesso negato!');
@@ -62,30 +62,32 @@ checkAccess();
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 function checkAccessImproved() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const addresses = [
+    "mymail@mail.com",
+    "yourmail@mail.com",
+    "hermail@mail.com",
+    "hismail@mail.com",
+    ];
 
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
+    const userEmail = prompt("Inserisci il tuo indirizzo email");
 
-    let grantAccess = 'false';
+    let grantAccess = false; // valore boolean tra gli apici
 
     for (let i = 0; i < addresses.length; i++) {
         const email = addresses[i];
 
         if (userEmail.length > 5) {
-
             if (email === userEmail) {
-                grantAccess = 'true';
-
+                grantAccess = true; // valore boolean tra gli apici
             }
-
         }
 
         if (grantAccess) {
-            console.log('Accesso consentito!');
+            console.log("Accesso consentito!");
         } else {
-            console.log('Accesso negato!');
+            console.log("Accesso negato!");
         }
     }
     checkAccessImproved();
-} 
+}
 // mancata chiusura
