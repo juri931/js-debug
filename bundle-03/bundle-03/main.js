@@ -25,7 +25,7 @@ const cars = [
     {
         manufacturer: 'Volkswagen',
         model: 'Golf',
-        type: 'Benzina'
+        type: 'benzina' // b maiuscola
     },
     {
         manufacturer: 'Fiat',
@@ -50,29 +50,25 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Kuga',
-        type: 'Diesel'
+        type: 'diesel' // d maiuscola
     },
     {
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    }, //mancata virgola
     {
         manufacturer: 'Audi',
         model: 'R8',
-        type: 'Benzina'
+        type: 'benzina' // b maiuscola
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type === 'benzina'); // errore sintassi >= invece di =>
 
-const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
-});
+const dieselCars = cars.filter( (auto) => auto.type === 'diesel'); // mantenere la stessa sintassi
 
-const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
-});
+const otherCars = cars.filter( (auto) => auto.type != 'benzina' && auto.type != 'diesel'); // OR al posto di AND
 
 console.log('Auto a benzina');
 console.log('*******************************');
